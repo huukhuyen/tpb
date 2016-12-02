@@ -1,0 +1,390 @@
+@charset "UTF-8";
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address,
+del, em, img, small, strong, b, u, i, hr,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+button,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  word-wrap: break-word;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: inherit;
+  font-weight: inherit;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figure, footer, header, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'tpb';
+  src: url("../fonts/TPBNeoSans-webfont.eot") format("embedded-opentype"), url("../fonts/TPBNeoSans-webfont.woff") format("woff"), url("../fonts/TPBNeoSans-webfont.ttf") format("truetype"), url("../fonts/TPBNeoSans-webfont.svg") format("svg"), url("../fonts/TPBNeoSans-webfont.svg#tpb_neo_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadProRegular';
+  src: url("../fonts/MyriadProRegular.eot") format("embedded-opentype"), url("../fonts/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular.ttf") format("truetype"), url("../fonts/MyriadProRegular.svg") format("svg");
+}
+
+.wrap::after, .wraper::after, .container::after, .header::after, .header .line-header::after {
+  clear: both;
+  content: " ";
+  display: block;
+  visibility: hidden;
+  height: 0;
+}
+
+body {
+  font-family: "tpb", sans-serif;
+  color: #333;
+  font-size: 14px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  line-height: 0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a783be;
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h5, h6 {
+  font-family: "tpb", sans-serif;
+  text-transform: uppercase;
+}
+
+:hover {
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -o-transition: all 400ms;
+  transition: all 400ms;
+}
+
+img {
+  max-width: 100%;
+  position: relative;
+}
+
+img:after {
+  content: "" " " attr(alt);
+  font-size: 16px;
+  font-family: FontAwesome;
+  color: #646464;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+li, ol {
+  list-style: none;
+}
+
+.wrap {
+  width: 100%;
+  margin: auto;
+}
+
+.wraper {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.header {
+  width: 100%;
+  color: #ffffff;
+}
+
+.header .content-header {
+  padding-bottom: 18px;
+  background: url("../img/bg_top.png");
+}
+
+.header .line-header {
+  position: relative;
+}
+
+.header .line-header .line {
+  position: absolute;
+  top: -18px;
+  z-index: 2;
+}
+
+.header .line-header .bg-left {
+  background: url("../img/bg_nav_left.png") left;
+  position: absolute;
+  top: -18px;
+  left: 0;
+  width: 50%;
+  height: 18px;
+}
+
+.header .line-header .bg-right {
+  background: url("../img/bg_nav_right.jpg") right;
+  position: absolute;
+  top: -18px;
+  right: 0;
+  width: 50%;
+  height: 18px;
+}
+
+.header .logo {
+  position: relative;
+  top: 10px;
+}
+
+.header nav {
+  float: right;
+}
+
+.header .menu-top {
+  text-transform: uppercase;
+  padding-top: 22px;
+  font-size: 12px;
+}
+
+.header .menu-top li {
+  position: relative;
+}
+
+.header .menu-top li:not(:last-child):after {
+  content: "";
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid #a783be;
+}
+
+.header ul {
+  float: left;
+}
+
+.header ul li {
+  float: left;
+}
+
+.header .form-top {
+  padding: 8px;
+}
+
+.header .form-top .fa-search {
+  cursor: pointer;
+  font-size: 21px;
+  padding: 6px;
+  border: 1px solid #a783be;
+  border-radius: 5px;
+}
+
+.header .form-top .language img {
+  max-width: 33px;
+  max-height: 20px;
+}
+
+.header .form-top .language .select {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  border: 1px solid #a783be;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header .form-top .language .select .fa {
+  padding-left: 8px;
+}
+
+.header .form-top .language .sub-language {
+  display: none;
+  background: #ffffff;
+}
+
+.header .form-top .language .sub-language .item:hover {
+  background: #a783be;
+}
+
+/*–––––––––––––––––––––––––––––––––––––––––––––––––– NAV
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.menu-body {
+  box-shadow: 0 2px 3px #ececec;
+  padding: 10px 0;
+  position: relative;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.menu-body .icon-home {
+  background: url("../img/home-icon.png") no-repeat 0 0;
+  width: 23px;
+  height: 18px;
+}
+
+.menu-body .icon-home:hover {
+  background: url("../img/home-icon.png") no-repeat 0 -19px;
+  width: 23px;
+  height: 18px;
+}
+
+.menu-body .nav-main {
+  padding-left: 30px;
+  position: relative;
+  display: block;
+}
+
+.menu-body .nav-main > li {
+  float: left;
+}
+
+.menu-body .nav-main > li a {
+  display: block;
+  padding: 12px 10px 6px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  color: #452265;
+}
+
+.menu-body .nav-main > li a:hover {
+  color: #f58220;
+}
+
+.menu-body .nav-main > li > ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  background: #ffffff;
+}
+
+.menu-body .nav-main > li > ul .sub-li {
+  padding: 0;
+}
+
+.menu-body .nav-main > li > ul .sub-li h3 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #452265;
+  border-bottom: 4px solid #f58220;
+}
+
+.menu-body .nav-main > li > ul .sub-li h3:hover {
+  color: #f58220;
+}
+
+/**/
+.pd_tb_10 {
+  padding: 10px 0 !important;
+}
+
+.mgn_lr_10 {
+  margin: 0 10px;
+}
+
+.mgn_top_0 {
+  margin-top: 0px !important;
+}
+
+.align_left {
+  text-align: left;
+}
+
+.align_right {
+  text-align: right;
+}
+
+.align_center {
+  text-align: center;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.owl-controls {
+  display: none !important;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 768px) {
+  .header .line-header {
+    display: none;
+  }
+  .header .content-header {
+    background: #452265;
+  }
+}

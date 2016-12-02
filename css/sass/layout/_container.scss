@@ -1,0 +1,17 @@
+.wrap {
+	@extend %clearfix;
+	width: 100%;
+	margin: auto;
+}
+.wraper {
+	@extend %clearfix;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}
+.container {
+	@extend %clearfix;
+	width: 100%;
+	max-width: 1000px;
+	margin: auto;
+}

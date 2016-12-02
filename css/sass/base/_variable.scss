@@ -1,0 +1,51 @@
+// **********************************
+//   font-face
+// **********************************
+@font-face {
+    font-family: 'tpb';
+    src: url('../fonts/TPBNeoSans-webfont.eot') format('embedded-opentype'), url('../fonts/TPBNeoSans-webfont.woff') format('woff'), url('../fonts/TPBNeoSans-webfont.ttf') format('truetype'), url('../fonts/TPBNeoSans-webfont.svg') format('svg'), url('../fonts/TPBNeoSans-webfont.svg#tpb_neo_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('../fonts/MyriadProRegular.eot') format('embedded-opentype'),
+     url('../fonts/MyriadProRegular.woff') format('woff'),
+     url('../fonts/MyriadProRegular.ttf') format('truetype'),
+     url('../fonts/MyriadProRegular.svg') format('svg');
+}
+// **********************************
+//   font-family
+// **********************************
+$font-family-body: 'tpb', sans-serif;
+$font-title: 'tpb', sans-serif;
+$font-link: 'Roboto', sans-serif;
+$font-awesome: "FontAwesome"; // **********************************
+//   COLOR
+// **********************************
+// Brand Color
+$color-nav: #dbe6eb;
+$color-primary: #452265;
+$color-1: #652d89;
+$color-2: #a783be;
+$color-3: #f58220;
+$color-4: #48768a;
+$color-5: #adc8ef;
+$color-6: #0f3646;
+$color-7: #006c98;
+$color-8: #1b4f66;
+$color-f2: #f2f2f2;
+$color-cam: #e4a024; // Application Color
+$color-o: #000000;
+$color-a: #ffffff;
+$color-b: #E5E5E5;
+$color-d: #333;
+$color-e: #ddd;
+$color-f: #636363;
+$color-g: #838383;
+$color-h: #c6c6c6;
+$color-i: #ff0000;
+$color-j: #8b8b8b;
+$color-m: #444444;
+$color-k: #070547;

@@ -1,0 +1,52 @@
+body {
+  font-family: $font-family-body;
+  color: $color-d;
+  font-size: 14px;
+}
+* {
+  @include box-sizing;
+}
+a {
+  color: inherit;
+  line-height: 0;
+  text-decoration: none;
+  &:hover {
+    color: $color-2;
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+h1, h2, h3, h4, h5, h5, h6 {
+  font-family: $font-title;
+  text-transform: uppercase;
+}
+:hover {
+    @include transition(all 400ms);
+}
+img {
+  max-width: 100%;
+  position: relative;
+    &:after {
+        content: "\f1c5" " " attr(alt);
+        font-size: 16px;
+        font-family: FontAwesome;
+        color: rgb(100, 100, 100);
+        display: block;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+}
+li,ol {
+  list-style: none;
+}
+// button, input, a, .btn {
+//   &:focus {
+//     outline: none;
+//   }
+// }

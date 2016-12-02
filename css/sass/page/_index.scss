@@ -1,0 +1,12 @@
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@include xs {
+    .header {
+        .line-header {
+            display: none;
+        }
+        .content-header {
+            background: $color-primary;
+        }
+    }
+};

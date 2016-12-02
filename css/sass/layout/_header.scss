@@ -1,0 +1,159 @@
+/* –––––––––––––––––––––––––––––––––––––––––––––––––– HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.header {
+    @extend %clearfix;
+    width: 100%;
+    color: $color-a;
+    .content-header {
+        padding-bottom: 18px;
+        background: url('../img/bg_top.png');
+    }
+    .line-header {
+        @extend %clearfix;
+        position: relative;
+        .line {
+            position: absolute;
+            top: -18px;
+            z-index: 2;
+        }
+        .bg-left {
+            background: url('../img/bg_nav_left.png')left;
+            position: absolute;
+            top: -18px;
+            left: 0;
+            width: 50%;
+            height: 18px;
+        }
+        .bg-right {
+            background: url('../img/bg_nav_right.jpg')right;
+            position: absolute;
+            top: -18px;
+            right: 0;
+            width: 50%;
+            height: 18px;
+        }
+    }
+    .logo {
+        position: relative;
+        top: 10px;
+    }
+    nav {
+        float: right;
+    }
+    .menu-top {
+        text-transform: uppercase;
+        padding-top: 22px;
+        font-size: 12px;
+        li {
+            position: relative;
+            &:not(:last-child) {
+                &:after {
+                    content: "";
+                    padding-left: 10px;
+                    margin-left: 10px;
+                    border-left: 1px solid $color-2;
+                }
+            }
+        }
+    }
+    ul {
+        float: left;
+        li {
+            float: left;
+        }
+    }
+    .form-top {
+        padding: 8px;
+        .fa-search {
+            cursor: pointer;
+            font-size: 21px;
+            padding: 6px;
+            border: 1px solid $color-2;
+            border-radius: 5px;
+        }
+        .language {
+            img {
+                max-width: 33px;
+                max-height: 20px;
+            }
+            .select {
+                display: flex;
+                align-items: center;
+                padding: 6px;
+                border: 1px solid $color-2;
+                border-radius: 5px;
+                cursor: pointer;
+                .fa {
+                    padding-left: 8px;
+                }
+            }
+            .sub-language {
+                display: none;
+                background: $color-a;
+                .item {
+                    &:hover {
+                        background: $color-2;
+                    }
+                }
+            }
+        }
+    }
+}
+/*–––––––––––––––––––––––––––––––––––––––––––––––––– NAV
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.menu-body {
+    box-shadow: 0 2px 3px #ececec;
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 1px solid $color-b;
+    .icon-home {
+        background: url('../img/home-icon.png') no-repeat 0 0;
+        width: 23px;
+        height: 18px;
+        &:hover {
+            background: url('../img/home-icon.png') no-repeat 0 -19px;
+            width: 23px;
+            height: 18px;
+        }
+    }
+    .nav-main {
+        padding-left: 30px;
+        position: relative;
+        display: block;
+        > li {
+            float: left;
+            a {
+                display: block;
+                padding: 12px 10px 6px;
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: bold;
+                color: $color-primary;
+                &:hover {
+                    color: $color-3;
+                }
+            }
+            > ul {
+                position: absolute;
+                left: 0;
+                right: 0;
+                display: block;
+                width: 100%;
+                background: $color-a;
+                .sub-li {
+                    padding: 0;
+                    h3{
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: $color-primary;
+                        border-bottom: 4px solid $color-3;
+                        &:hover {
+                            color: $color-3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/**/
