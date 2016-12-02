@@ -102,6 +102,7 @@
 /*–––––––––––––––––––––––––––––––––––––––––––––––––– NAV
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 .menu-body {
+    position: absolute;
     box-shadow: 0 2px 3px #ececec;
     padding: 10px 0;
     position: relative;
@@ -122,30 +123,69 @@
         display: block;
         > li {
             float: left;
-            a {
+            > a {
                 display: block;
                 padding: 12px 10px 6px;
                 text-transform: uppercase;
                 font-size: 15px;
                 font-weight: bold;
                 color: $color-primary;
-                &:hover {
-                    color: $color-3;
-                }
             }
-            > ul {
+            > .list-menu-content {
+                padding-top: 30px;
                 position: absolute;
                 left: 0;
                 right: 0;
                 display: block;
                 width: 100%;
-                background: $color-a;
                 .sub-li {
                     padding: 0;
-                    h3{
+                    // .item-list {
+                    //     border-left: 1px solid $color-1;
+                    // }
+                    .content-sub {
+                        border-left: 1px solid $color-1;
+                        min-height: 130px;
+                        text-align: justify;
+                        padding: 5px 10px 10px 5px;
+                        p {
+                            position: relative;
+                            padding: 5px 0;
+                        }
+                        .brd_bottom {
+                            border-bottom: 1px solid $color-1;
+                        }
+                        a {
+                            color: $color-1;
+                            font-size: 14px;
+                            line-height: 18px;
+                            &:hover {
+                                color: $color-3;
+                            }
+                        }
+                        .fa {
+                            position: absolute;
+                            right: 0;
+                            top: calc(50% - 7px);
+                            color: $color-2;
+                        }
+                        .w80 {
+                            width: 80%;
+                            display: block;
+                        }
+                    }
+                    .more {
+                        color: $color-1;
+                        font-size: 15px;
+                        font-weight: bold;
+                        padding: 5px 10px 10px 0px;
+                        margin-left: 5px;
+                    }
+                    h3 {
                         font-size: 15px;
                         font-weight: bold;
                         color: $color-primary;
+                        padding: 5px 0 10px;
                         border-bottom: 4px solid $color-3;
                         &:hover {
                             color: $color-3;

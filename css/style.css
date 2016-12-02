@@ -90,7 +90,7 @@ a {
 }
 
 a:hover {
-  color: #a783be;
+  color: #f58220;
   text-decoration: none;
 }
 
@@ -266,6 +266,7 @@ li, ol {
 /*–––––––––––––––––––––––––––––––––––––––––––––––––– NAV
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 .menu-body {
+  position: absolute;
   box-shadow: 0 2px 3px #ececec;
   padding: 10px 0;
   position: relative;
@@ -294,7 +295,7 @@ li, ol {
   float: left;
 }
 
-.menu-body .nav-main > li a {
+.menu-body .nav-main > li > a {
   display: block;
   padding: 12px 10px 6px;
   text-transform: uppercase;
@@ -303,31 +304,74 @@ li, ol {
   color: #452265;
 }
 
-.menu-body .nav-main > li a:hover {
-  color: #f58220;
-}
-
-.menu-body .nav-main > li > ul {
+.menu-body .nav-main > li > .list-menu-content {
+  padding-top: 30px;
   position: absolute;
   left: 0;
   right: 0;
   display: block;
   width: 100%;
-  background: #ffffff;
 }
 
-.menu-body .nav-main > li > ul .sub-li {
+.menu-body .nav-main > li > .list-menu-content .sub-li {
   padding: 0;
 }
 
-.menu-body .nav-main > li > ul .sub-li h3 {
+.menu-body .nav-main > li > .list-menu-content .sub-li .content-sub {
+  border-left: 1px solid #652d89;
+  min-height: 130px;
+  text-align: justify;
+  padding: 5px 10px 10px 5px;
+}
+
+.menu-body .nav-main > li > .list-menu-content .sub-li .content-sub p {
+  position: relative;
+  padding: 5px 0;
+}
+
+.menu-body .nav-main > li > .list-menu-content .sub-li .content-sub .brd_bottom {
+  border-bottom: 1px solid #652d89;
+}
+
+.menu-body .nav-main > li > .list-menu-content .sub-li .content-sub a {
+  color: #652d89;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.menu-body .nav-main > li > .list-menu-content .sub-li .content-sub a:hover {
+  color: #f58220;
+}
+
+.menu-body .nav-main > li > .list-menu-content .sub-li .content-sub .fa {
+  position: absolute;
+  right: 0;
+  top: calc(50% - 7px);
+  color: #a783be;
+}
+
+.menu-body .nav-main > li > .list-menu-content .sub-li .content-sub .w80 {
+  width: 80%;
+  display: block;
+}
+
+.menu-body .nav-main > li > .list-menu-content .sub-li .more {
+  color: #652d89;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px 10px 10px 0px;
+  margin-left: 5px;
+}
+
+.menu-body .nav-main > li > .list-menu-content .sub-li h3 {
   font-size: 15px;
   font-weight: bold;
   color: #452265;
+  padding: 5px 0 10px;
   border-bottom: 4px solid #f58220;
 }
 
-.menu-body .nav-main > li > ul .sub-li h3:hover {
+.menu-body .nav-main > li > .list-menu-content .sub-li h3:hover {
   color: #f58220;
 }
 
